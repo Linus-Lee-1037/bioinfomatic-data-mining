@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": 
+    [
+
+        {
+            "name": "(gdb) 启动",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "D:\\FileRecv\\bioinformatic data mining\\WAM.cpp",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "D:\\MinGW\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\mingw64\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
